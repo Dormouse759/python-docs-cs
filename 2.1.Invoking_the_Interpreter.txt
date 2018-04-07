@@ -1,0 +1,22 @@
+Pythonový tlumočník je obvykle instalován jako /usr/local/bin/python3.6 na těch strojích, kde je k dispozici; uvedení / usr / local / bin ve vyhledávací cestě shellu Unixu umožňuje spuštění příkazu zadáním příkazu:
+
+python3.6
+
+do shellu. [1] Vzhledem k tomu, že volba adresáře, ve kterém žije tlumočník, je možnost instalace, jsou možná i jiná místa; obraťte se na místního guru nebo administrátora systému Python. (Například / usr / local / python je populární alternativní umístění.)
+
+V systémech Windows je instalace Pythonu obvykle umístěna v C: \ Python36, ačkoli to můžete změnit při instalaci instalačního programu. Chcete-li přidat tento adresář do cesty, můžete do příkazového řádku zadejte do příkazového řádku následující příkaz:
+
+nastavit cestu =% cesta%; C: \ python36
+Zadání znaku konce souboru (Control-D v systému Unix, Control-Z v systému Windows) v primární výzvě způsobí, že tlumočník ukončí stav nulového ukončení. Pokud to nefunguje, můžete ukončit interpret zadáním následujícího příkazu: quit ().
+
+Funkce editace čáry tlumočníka zahrnují interaktivní úpravy, nahrazení historie a dokončení kódu v systémech, které podporují readline. Snad nejrychlejší kontrola, zda je podporována editace příkazového řádku, zadává příkaz Control-P k prvnímu příkazu Pythonu, který získáte. Pokud pípne, máte příkazovou úpravu; viz Příloha Interaktivní editaci vstupů a nahrazení historie pro úvod do kláves. Pokud se nezobrazí nic, nebo pokud se ozve ^ P, není k dispozici editace příkazového řádku; budete moci použít zpětný prostor pouze pro odstranění znaků z aktuálního řádku.
+
+Tlumočník pracuje poněkud jako shell Unix: při volání se standardním vstupem připojeným k zařízení tty čte a provádí příkazy interaktivně; když je volán s argumentem názvu souboru nebo se standardním vstupem, čte a spustí skript z tohoto souboru.
+
+Druhým způsobem, jak spustit tlumočníka, je příkaz python -c [arg] ..., který provede příkaz (y) ve příkazu, analogický s volbou -c shellu. Vzhledem k tomu, že příkazy Pythonu často obsahují mezery nebo jiné znaky, které jsou specifické pro shell, obvykle se doporučuje citovat celý příkaz pomocí jednoduchých uvozovek.
+
+Některé moduly Pythonu jsou také užitečné jako skripty. Ty lze vyvolat pomocí modulu python -m [arg] ..., který spouští zdrojový soubor modulu, jako kdyby jste na příkazovém řádku napsali jeho celé jméno.
+
+Při použití souboru skriptu je někdy užitečné, aby byl skript spuštěn a následně mohl vstoupit do interaktivního režimu. To lze provést předáním příkazu -i před skriptem.
+
+Všechny příkazové řádky jsou popsány v příkazovém řádku a prostředí.

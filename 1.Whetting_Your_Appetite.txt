@@ -1,0 +1,30 @@
+﻿Motivace
+Pokud hodně pracujete na počítači, časem přijdete na to, že některé úkony by bylo vhodné automatizovat. Například chcete najít a nahradit větší množství textových souborů, nebo přejmenovat a uspořádat spoustu fotek složitým způsobem. Možná byste chtěli napsat vlastní malou databázi, aplikaci s grafickým prostředím, nebo jednoduchou hru.
+
+Pokud jste profesionální softwarový vývojář, určitě pracujete s knihovnami C/C++/Java. Všimněte si ale, že obvyklý cyklus kódování/kompilace/testování/překompilování, je příliš pomalý. Píšete třeba zkušební sadu pro nějakou knihovnu a zjistíte, že testovací kód je náročný úkol. Nebo jste možná napsali program, který by mohl používat rozšíření, a nechcete navrhnout a implementovat zcela nový jazyk pro svou aplikaci.
+
+Python je jazyk právě pro vás.
+
+Pro některé z těchto úkolů byste mohli napsat  Unix shell skript nebo dávkové soubory Windows, ale shell skripty jsou nejlepší pro pohyb okolo souborů a změny textových dat, které nejsou vhodné pro aplikace nebo GUI hry. Můžete napsat C/C++/Java program, ale může trvat spoustu času vývoj dokonce i prvotního programu. Python je jednodušší k použití, dostupný v operačních systémech Windows, Mac OS X a Unix, a pomůže vám dokončit úkol rychleji.
+
+Python je jednoduchý, ale je to skutečný programovací jazyk, který nabízí mnohem větší strukturu a podporu pro velké programy, než shell skripty nebo dávkové soubory mohou nabídnout. Na druhou stranu Python nabízí mnohem více kontrol chyb než C, a protože je jazykem velmi vysoké úrovně, má vestavěné datové typy na vysoké úrovni, jako jsou flexibilní pole a slovníky. Vzhledem k obecnějším datovým typům je Python použitelný pro mnohem větší problémovou doménu než Awk nebo dokonce Perl, přesto je mnoho věcí v jazyce Python stejně snadné jako v těchto jazycích.
+
+Python umožňuje rozdělit váš program na moduly, které lze znovu použít v jiných programech Pythonu. Dodává se s rozsáhlou sbírkou standardních modulů, které můžete použít jako základ pro vaše programy - nebo jako příklady, abyste se začali učit programovat v Pythonu. Některé z těchto modulů poskytují například souborové I/O, systémové volání, sokety a dokonce i nástroje pro grafická uživatelská rozhraní, jako je Tk.
+
+Python je interpretovaný jazyk, který vám během vývoje programu ušetří značnou dobu, protože není zapotřebí kompilace a propojení. Interpretr může být použit interaktivně, což umožňuje snadné experimentování s rysy jazyka, psaní #programů odhodlání nebo testování funkcí během vývoje programu zdola nahoru. Je to také praktická kalkulačka.
+
+Python umožňuje psát programy kompaktně a čitelně. Programy napsané v Pythonu jsou typicky mnohem kratší než ekvivalentní C, C ++ nebo Java programy, a to z několika důvodů:
+
+-datové typy na vysoké úrovni vám umožňují vyjádřit komplexní operace v jediném příkazu;
+-seskupování příkazů se provádí pomocí odsazení namísto začátku a konce závorek;
+-nejsou potřeba prohlášení o proměnných nebo argumentech.
+
+Python je rozšiřitelný: pokud víte, jak programovat v jazyce C, je snadné přidat do interpretače novou vestavěnou funkci nebo modul, ať už provádět kritické operace s maximální rychlostí, nebo propojovat programy Pythonu s knihovnami, které mohou být k dispozici pouze v binární podobě (například v grafické knihovně specifické pro vydavatele). Jakmile jste opravdu připojeni, můžete propojit překladač Pythonu s aplikací napsanou v jazyce C a použít jej jako rozšíření nebo příkazový jazyk pro danou aplikaci.
+
+Mimochodem, jazyk je pojmenován podle pořadu BBC "Monty Python's Flying Circus" a nemá nic společného s plazy. Uvádění odkazů na skeče Montyho Pythona v dokumentaci není pouze povoleno, doporučuje se!
+
+Nyní, když jste všichni nadšeni Pythonem, budete to chtít podrobněji prozkoumat. Vzhledem k tomu, že nejlepší způsob, jak se naučit jazyk, je používat jej, tento tutoriál vás vyzývá k hraní si s interpretem Pythonu při čtení.
+
+V následující kapitole jsou vysvětleny mechanismy používání interpretru. Toto je poměrně světská informace, ale je zásadní pro vyzkoušení pozdějších příkladů.
+
+Zbytek tutoriálu představuje různé příklady jazyka a systému Pythonu, a to pomocí příkladů, které začínají jednoduchými výrazy, příkazy a datovými typy, funkcemi a moduly a nakonec se dotýkají pokročilých konceptů, jako jsou výjimky a uživatelsky definované třídy.
