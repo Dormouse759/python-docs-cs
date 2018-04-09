@@ -1,0 +1,4 @@
+Motivace
+Pokud hodnì pracujete na poèítaèi, èasem pøijdete na to, že nìkteré úkony by bylo vhodné automatizovat. Napøíklad chcete najít a nahradit vìtší množství textových souborù, nebo pøejmenovat a uspoøádat spoustu fotek složitým zpùsobem. Možná byste chtìli napsat vlastní malou databázi, aplikaci s grafickým prostøedím, nebo jednoduchou hru.
+Pokud jste profesionální softwarový vývojáø, urèitì pracujete s knihovnami C, C ++ èi Java. Všimnìte si ale, že obvyklý cyklus kódování › kompilace › testování › opìtovná kompilace, je pøíliš pomalý. Tøeba píšete zkušební sadu pro takovou knihovnu a zjistíte, že testovací kód je nároèný úkol. Nebo jste možná napsali program, který by mohl používat rozšíøení, ale nechcete vymýšlet zcela nový jazyk.
+Python je zkrátka jazyk pro vás.
