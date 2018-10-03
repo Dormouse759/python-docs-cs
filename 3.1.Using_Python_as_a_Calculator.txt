@@ -1,1 +1,0 @@
-Vyzkoušejme některé jednoduché příkazy Pythonu. Spusťte interpretr a počkejte na primární prompt >>>. (Nemělo by to trvat dlouho.)
