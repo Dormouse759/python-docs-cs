@@ -1,19 +1,50 @@
-Pythoní interpretr je obvykle instalován v /usr/local/bin/python3.6 na těch strojích, kde je k dispozici; vložení /usr/local/bin ve vyhledávací cestě shellu Unixu umožňuje spuštění příkazu zadáním příkazu:
+Pythonový překladač je obvykle instalován jako /usr/local/bin/python3. 6 na
+těch strojích, kde je k dispozici; uvedení /usr/local/bin ve vyhledávací
+cestě shellu Unixu umožňuje spuštění příkazu zadáním příkazu:
 
-do shellu. [1] Vzhledem k tomu, že volba adresáře, ve kterém se interpretr nachází, je možnost instalace, jsou možná i jiná místa; obraťte se na místního guru nebo administrátora systému Python. (Například /usr/local/python je populární alternativní umístění.)
+ python3.6
 
-Ve Windows je Python obvykle umístěn v C:\Python36, ačkoli to můžete změnit při instalaci programu. Chcete-li přidat tento adresář do cesty, můžete do příkazového řádku zadejte do příkazového řádku následující příkaz:
+do shellu. [1] Vzhledem k tomu, že volba adresáře, ve kterém se nachází interpreter,
+je možná při instalaci, jsou možná i jiná místa; obraťte se na místního guru
+nebo administrátora systému Python. (Například /usr/local/python je
+populární alternativní umístění.)
 
-Zadání end-of-file znaku (Control-D v systému Unix, Control-Z ve Windows) v primárním prompt způsobí, že interpretr ukončí v nulevém stavu ukončení. Pokud nefunguje, můžete ukončit interpret zadáním následujícího příkazu: quit().
+V systémech Windows je instalace Pythonu obvykle umístěna v C:\Python36,
+ačkoli to můžete změnit při instalaci instalačního programu. Chcete-li přidat
+tento adresář do cesty, můžete do příkazového řádku zadejte do příkazového
+řádku následující příkaz:
 
-Funkce line-editing interpretra zahrnují interaktivní úpravy, substituce historie a dokončení kódu v systémech, které podporují readline. Snad nejrychlejší kontrola, zda je podporována editace příkazového řádku, zadává příkaz Control-P k prvnímu příkazu Pythonu, který získáte. Pokud pípne, máte příkazovou úpravu; viz Příloha Interaktivní editaci vstupů a nahrazení historie pro úvod do kláves. Pokud se nezobrazí nic, nebo pokud se ozve ^P, není k dispozici editace příkazového řádku; budete moci použít backspace pouze pro odstranění znaků z aktuálního řádku.
+nastavit cestu =%cesta%; C:\python36 Zadání znaku konce souboru (Control-D
+v systému Unix, Control-Z v systému Windows) v primární výzvě způsobí, že
+interpreter ukončí stav nulového ukončení. Pokud to nefunguje, můžete ukončit
+interpret zadáním následujícího příkazu: quit().
 
-interpretr pracuje podobně jako shell Unix: při volání se standardním vstupem připojeným k zařízení tty, čte a provádí příkazy interaktivně; když je volán s argumentem názvu souboru nebo se standardním vstupem, čte a spustí skript z tohoto souboru.
+Funkce editace čáry interpreteru zahrnují interaktivní úpravy, nahrazení
+historie a dokončení kódu v systémech, které podporují readline. Snad
+nejrychlejší kontrola, zda je podporována editace příkazového řádku, zadává
+příkaz Control-P k prvnímu příkazu Pythonu, který získáte. Pokud pípne, máte
+příkazovou úpravu; viz Příloha Interaktivní editaci vstupů a nahrazení
+historie pro úvod do kláves. Pokud se nezobrazí nic, nebo pokud se ozve ^P,
+není k dispozici editace příkazového řádku; budete moci použít zpětný prostor
+pouze pro odstranění znaků z aktuálního řádku.
 
-Druhým způsobem, jak spustit interpretra, je python -c command [arg] ..., který provede příkaz(y) v command, analogický s volbou -c shellu. Vzhledem k tomu, že příkazy Pythonu často obsahují mezery nebo jiné znaky, které jsou specifické pro shell, obvykle se doporučuje citovat celý příkaz pomocí jednoduchých uvozovek.
+Interpreter pracuje poněkud jako shell Unix: při volání se standardním vstupem
+připojeným k zařízení tty čte a provádí příkazy interaktivně; když je volán s
+argumentem názvu souboru nebo se standardním vstupem, čte a spustí skript z
+tohoto souboru.
 
-Některé moduly Pythonu jsou také užitečné jako skripty. Ty lze vyvolat pomocí modulu python -m [arg] ..., který spouští zdrojový soubor modulu, jako kdyby jste na příkazovém řádku napsali jeho celé jméno.
+Druhým způsobem, jak spustit interpreteru, je příkaz python -c [arg] ... , který
+provede příkaz (y) ve příkazu, analogický s volbou -c shellu. Vzhledem k tomu,
+že příkazy Pythonu často obsahují mezery nebo jiné znaky, které jsou
+specifické pro shell, obvykle se doporučuje citovat celý příkaz pomocí
+jednoduchých uvozovek.
 
-Při použití souboru skriptu je někdy užitečné, aby byl skript spuštěn a následně mohl vstoupit do interaktivního režimu. To lze provést předáním parametru -i před skript.
+Některé moduly Pythonu jsou také užitečné jako skripty. Ty lze vyvolat pomocí
+modulu python -m [arg] ..., který spouští zdrojový soubor modulu, jako kdyby
+jste na příkazovém řádku napsali jeho celé jméno.
+
+Při použití souboru skriptu je někdy užitečné, aby byl skript spuštěn a
+následně mohl vstoupit do interaktivního režimu. To lze provést předáním
+příkazu -i před skriptem.
 
 Všechny příkazové řádky jsou popsány v příkazovém řádku a prostředí.

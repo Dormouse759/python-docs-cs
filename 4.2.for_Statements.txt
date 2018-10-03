@@ -1,0 +1,13 @@
+Příkaz for se v Pythonu mírně liší od použití v C a Pascalu. Namísto toho, aby
+vždy přesahoval aritmetický průběh čísel (jako v Pascalu), nebo dává uživateli
+možnost definovat jak velikost kroku, tak podmínku zastavení (jako C),
+prokládá iteraci přes položky jakékoliv sekvence (seznam nebo řetězec) v
+pořadí, v jakém se objevují v pořadí. Například:
+
+Pokud potřebujete změnit sekvenci, kterou opakujete, když jste uvnitř smyčky
+(například pro kopírování vybraných položek), doporučuje se nejprve vytvořit
+kopii. Přepisování přes sekvenci nevytváří implicitní kopii. Řez znaků to činí
+zvláště vhodným:
+
+S for w in words:, příklad by se pokusil vytvořit nekonečný seznam, kam by
+vkládal defenestrate pořád znovu a znovu. 

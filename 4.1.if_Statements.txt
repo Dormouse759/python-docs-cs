@@ -1,0 +1,6 @@
+Snad nejznámějším typem příkazu je if. Například:
+
+Za první podmínkou může následovat nula nebo další elif; přítomnost klíčového
+slova else není podmínkou. Klíčové slovo "elif" je zkrácenina pro "else if" a
+je výhodné, protože snižuje počet mezer v kódu. Posloupnost if ... elif . . .
+elif ... nahrazuje příkazy switch nebo case, které známe z jiných jazyků.

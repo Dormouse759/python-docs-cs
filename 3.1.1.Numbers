@@ -1,0 +1,34 @@
+Tlumočník se chová jako jednoduchá kalkulačka: na ni můžete zadat výraz 
+a zapíše hodnotu. Syntaxe výrazů je přímá: operátory +, -, * a / 
+pracují stejně jako ve většině ostatních jazyků (například Pascal nebo C); mohou být pro seskupení použity závorky (()). Například:
+
+Celočíselná čísla (např. 2, 4, 20) mají typ int, ty s desetinou částí 
+(např. 5.0, 1.6) mají typ float. V tutoriálu se dozvíme více o 
+číselných datových typech.
+
+Dělení (/) vždy vrátí float. Chcete-li dělit a získat 
+celočíselný výsledek (vyloučit jakýkoli zlomkový výsledek), můžete 
+použít operátor //; pro výpočet zbytku můžete použít%:
+
+Pomocí Pythonu je možné použít operátor ** pro mocnění [1]:
+
+Rovnítko (=) se používá k přiřazení hodnoty proměnné. Poté se před 
+dalším interaktivním příkazem nezobrazí žádný výsledek:
+
+Pokud není proměnná "definována" (přiřazena hodnota), pokus o její 
+použití vám vykáže chybu:
+
+Existuje plná podpora pro desetinou tečku; operátory se smíšenými operandy 
+převádějí celé operandy na desetinou tečku:
+
+V interaktivním režimu je poslední vypsaný výraz přiřazen proměnné _. 
+To znamená, že když používáte Python jako stolní kalkulačku, je poněkud 
+snadnější pokračovat v výpočtech, například:
+
+Tuto proměnnou by uživatel měl považovat pouze za čtení. Neuvádějte mu 
+explicitně hodnotu - vytvořili byste nezávislou lokální proměnnou se 
+stejným názvem maskování vestavěné proměnné s její magickou chutí.
+
+Kromě int a float podporuje Python i další data typy čísel, jako je 
+desetinná a zlomková. Python má také vestavěnou podporu pro iracionální 
+čísla a používá příponu j nebo J pro uvedení imaginární části (např. 3 + 5j).

@@ -1,0 +1,14 @@
+Spouštění modulů jako skripty
+
+Když pouštíte Pythonní modul jako ::
+
+kód v modulu se spustí stejně jako když jej naimportujete, ale se jméněm
+``__name__`` nastaveným na ``"__main__"``. To znamená, že přídáním tohoto
+kódu na konec modulu::
+
+můžete vytvořit modul použitelný jak jako skript, tak jako importovatelný
+modul, protože kód, který parsuje argumenty z příkazového řádku běží pouze
+v případě, že je modul puštěn jako "hlavní":
+
+V případě importu kód něběží::
+

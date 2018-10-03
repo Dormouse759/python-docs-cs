@@ -1,0 +1,46 @@
+Více o modulech
+
+Module může obsahovat spustitelné příkazy stejnětak jako definice funkcí.
+Tyto výrazy mají za úkol inicializovat modul. Jsou spuštěné pouze v *první*
+moment, kdy se jméno modulu vyskytne v importovacím výrazu. [#]_
+(Také se spustí, když se soubor pustí jako skript.)
+
+Každý modul má svou vlastní tabulku symbolů, která se používá jako globální
+tabulka symbolů pro všechny funkce uvnitř modulu. Tím pádem autor modulu smí
+používat globální proměnné beze strachu z toho, že by kolidovaly s globálními
+proměnnými jiných modulů.Na druhou stranu, pokud víte, co děláte, můžete sahat
+na globální proměnné jiného modulu stejným zápisem jako když používate jeho
+funkce, ``modul.promenna``.
+
+Moduly mohou importovat jiné moduly. Je běžné, ale ne nutné, umisťovat všechny
+:keyword:'import' příkazy na začátek modulu (nebo, v tomto případě, skriptu).
+Importované moduly jsou umístěny do globální tabulky symbolů.
+
+Existuje varianta příkazu :keyword:`import`, která importuje jména z modulu
+přímo do globální tabulky importujícího modulu. Například::
+
+Toto nezahrnuje jméno modulu, ze kterého se symboly importují (tedy v příkladu
+``fibo`` není definováno).
+
+Existuje i varianta pro importování všech jmen, která jsou definována v modulu::
+
+Toto importuje všechna jména kromě těch, která začínají podržítkem (``_``).
+Ve většině případů se tohoto nevyužívá, jelikož je zahrnuta sada neznámých jmen,
+která mohou kolidovat s těmi, která jste již sami definovali ve vlastním modulu.
+
+Je nutné podotknout, že importování ``*`` není dobrým zvykem, protože způsobuje
+špatně čitelný kód. Obvykle ale bývá v pořádku tohoto využít v interaktivním
+módu pro zjednodušení zápisu.
+
+Pokud za jménem modulu následuje :keyword:`as`, pak slovo následující po
+:keyword:`as` je vázáno přímo na naimportovaný modul.
+
+Toto je import stejným způsobem jako ``import fibo``, ale zpřístupní jej jako ``fib``
+
+Tohoto lze také využít při využití :keyword:`from` s podobným efektem::
+
+Z důvodů efektivity se každý modul ukládá pouze jednou pro každý interpretr.
+Pokud tedz změníte své moduly, musíte restartovat interpretr, nebo, pokud se
+jedná o modul, který chcete testovat interaktivně, použijte :func:`importlib.reload`,
+příklad: ``import importlib; importlib.reload(jmeno_modulu)``.
+

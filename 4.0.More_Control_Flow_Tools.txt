@@ -1,0 +1,2 @@
+Kromě právě zadaného příkazu while má Python obvyklé ovládací prvky z jiných
+jazyků, některé trochu upravené. 
