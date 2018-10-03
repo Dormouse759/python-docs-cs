@@ -1,6 +1,7 @@
 Tlumočník se chová jako jednoduchá kalkulačka: na ni můžete zadat výraz 
 a zapíše hodnotu. Syntaxe výrazů je přímá: operátory +, -, * a / 
-pracují stejně jako ve většině ostatních jazyků (například Pascal nebo C); mohou být pro seskupení použity závorky (()). Například:
+pracují stejně jako ve většině ostatních jazyků (například Pascal nebo C);
+mohou být pro seskupení použity závorky (()). Například:
 
 Celočíselná čísla (např. 2, 4, 20) mají typ int, ty s desetinou částí 
 (např. 5.0, 1.6) mají typ float. V tutoriálu se dozvíme více o 
