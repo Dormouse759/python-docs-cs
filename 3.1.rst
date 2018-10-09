@@ -1,0 +1,2 @@
+Vyzkoušejme některé jednoduché příkazy Pythonu. Spusťte tlumočníka a počkejte
+na primární výzvu. (Nemělo by to trvat dlouho.)

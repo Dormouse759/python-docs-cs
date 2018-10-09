@@ -1,0 +1,71 @@
+Kromě čísel může Python také manipulovat s řetězci, které lze vyjádřit
+několika způsoby. Mohou být uzavřeny v jednoduchých uvozovkách ("...") nebo u
+dvojitých uvozovek ("...") se stejným výsledkem [2]. \ lze použít k úniku
+uvozovek:
+
+V interaktivním interpretovi je výstupní řetězec uzavřený v uvozovkách a
+zvláštní znaky uniká zpětnými lomítkama. Zatímco to může někdy vypadat
+odlišně od vstupu (přiložené uvozovky by se mohly změnit), jsou tyto dva
+řetězce ekvivalentní. Řetězec je uzavřen v dvojitých uvozovkách, pokud
+řetězec obsahuje jednoduchou citaci a žádné dvojité uvozovky, jinak je
+uzavřen v jednoduchých uvozovkách. Funkce print () vytváří čitelnější výstup
+tím, že vynechá přiložené uvozovky a tiskne únikové a speciální znaky:
+
+Pokud nechcete, aby znaky předcházené \ byly interpretovány jako speciální
+znaky, můžete použít surové řetězce přidáním r před prvním citátem:
+
+Řetězcové literály mohou obsahovat více řádků. Jedním ze způsobů je použití
+trojnásobných uvozovek: "" "..." "" nebo "" ... "" '. Konec řádků je
+automaticky zahrnut v řetězci, ale je možné zabránit tomu přidáním \ na konci
+řádku. Následující příklad:
+
+produkuje následující výstup (všimněte si, že počáteční nový řádek není
+zahrnut):
+
+Řetězce lze spojit (slepit dohromady) s operátorem + a opakovat s *:
+
+Dva nebo více řetězcových literálů (tj. Těch, které jsou uzavřeny mezi
+uvozovkami) vedle sebe jsou automaticky zřetězeny.
+
+Tato funkce je užitečná zejména v případě, že chcete přerušit dlouhé řetězce:
+
+Pokud chcete spojit proměnné nebo proměnnou a doslovně, použijte +:
+
+Řetězec lze indexovat (předplacené), přičemž první znak má index 0.
+Neexistuje žádný samostatný typ písma; znak je jednoduše řetězec velikosti
+jedna:
+
+Indexy mohou být také záporná čísla, začínat počítat vpravo:
+
+Všimněte si, že od -0 je stejné jako 0, negativní indexy začínají od -1.
+
+Kromě indexování je také podporováno krájení. Zatímco indexování se používá k
+získání jednotlivých znaků, krájení vám umožňuje získat podřetězec:
+
+Všimněte si, jak je začátek vždy zahrnut a konec je vždy vyloučen. To
+zajišťuje, že s [: i] + s [i:] se vždy rovná s:
+
+Indexy řezu mají užitečné výchozí hodnoty; vynechaný první index je výchozí
+na nulu, vynechán druhý index je výchozí k velikosti řezaného řetězce.
+
+Jeden způsob, jak si pamatovat, jak plátky fungují, je přemýšlet o tom, že
+indexy ukazují mezi znaky, přičemž levý okraj prvního znaku je číslovaný 0.
+Pak pravý okraj posledního znaku řetězce n znaků má index n, například:
+
+První řádek čísel udává polohu indexů 0 ... 6 v řetězci; druhý řádek udává
+odpovídající negativní indexy. Úsek od i do j se skládá ze všech znaků mezi
+hranami označenými i a j.
+
+Pro ne-záporné indexy je délka řezu rozdílem indexů, pokud jsou oba v mezích.
+Například délka slova [1: 3] je 2.
+
+Při pokusu o použití příliš velkého indexu dojde k chybě:
+
+Nicméně indexy rozkrojení řezů jsou při použití pro krájení lahodně zpracovány:
+
+Pythonové řetězce nelze změnit - jsou neměnné. Proto přiřazení indexované
+pozici v řetězci vede k chybě:
+
+Pokud potřebujete jiný řetězec, měli byste vytvořit nový řetězec:
+
+Vestavěná funkce len () vrací délku řetězce:
