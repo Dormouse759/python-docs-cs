@@ -1,4 +1,4 @@
-Python zná řadu datových typů sloučenin, které se používají ke sdružování dalších hodnot. Nejobvyklejší je seznam,
+Python zná řadu sloučenin datových typů, které se používají ke sdružování dalších hodnot. Nejobvyklejší je seznam,
 který lze zapsat jako seznam hodnot (položek) oddělených čárkami mezi hranatými závorkami. Seznamy mohou obsahovat
 položky různých typů, ale obvykle všechny položky mají stejný typ.
 Stejně jako řetězce (a všechny ostatní vestavěné typy sekvencí) lze seznamy indexovat a nakrájet:
