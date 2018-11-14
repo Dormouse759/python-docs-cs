@@ -1,0 +1,55 @@
+Můžeme vytvořit funkci, která zapisuje série Fibonacci do libovolné hranice:
+
+Klíčové slovo def představuje definici funkce. Musí být následováno názvem
+funkce a seznamem formálních parametrů. Výrazy, které tvoří tělo funkce,
+začínají na dalším řádku a musí být odsazeny.
+
+První vyjádření funkce těla může být případně řetězec literal; tento řetězec
+literal je dokumentační řetězec funkce nebo docstring. (Další informace
+o dokumentech naleznete v části Dokumentační řetězce.) Existují nástroje,
+které používají dokumenty pro automatické vytváření online nebo tištěné
+dokumentace nebo umožňují uživateli interaktivně procházet kód; je dobrá
+praxe zahrnout docstrings do kódu, který píšete, takže si zvykněte.
+
+Provedení funkce představuje novou tabulku symbolů používanou pro lokální
+proměnné funkce. Přesněji, všechny proměnné přiřazení funkce ukládají hodnotu
+do tabulky místních symbolů; zatímco proměnné reference se nejprve podívají
+do místní tabulky symbolů, pak do tabulky místních symbolů uzavřených funkcí,
+potom do tabulky globálních symbolů a nakonec do tabulky vestavěných názvů.
+Globální proměnné tedy nelze přímo přiřadit hodnotě v rámci funkce (pokud
+není uvedena v globálním příkazu), ačkoliv mohou být odkazovány.
+
+Skutečné parametry (argumenty) volání funkce jsou zaváděny v místní tabulce
+symbolů volané funkce při volání; proto jsou argumenty předávány pomocí volání
+podle hodnoty (kde hodnota je vždy odkaz na objekt, nikoliv hodnotu objektu).
+Když funkce vyvolá jinou funkci, pro daný hovor se vytvoří nová tabulka
+místních symbolů.
+
+Definice funkce představuje název funkce v aktuální tabulce symbolů.
+Hodnota názvu funkce má typ, který je interpretorem rozpoznán jako
+uživatelsky definovaná funkce. Tuto hodnotu lze přiřadit jinému jménu,
+který může být také použit jako funkce. Toto slouží jako obecný mechanismus
+přejmenování:
+
+Pokud pocházíte z jiných jazyků, můžete namítnout, že fib není funkce,
+ale postup, protože nevrací hodnotu. Ve skutečnosti dokonce i funkce bez
+výkazu návratnosti vrátí hodnotu, i když je docela nudná. Tato hodnota se
+nazývá Žádná (je to vestavěný název). Psaní hodnoty Žádný zpravidla potlačuje
+tlumočník, pokud by byla jediná zapsaná hodnota. Můžete to vidět, pokud opravdu
+chcete použít print():
+
+Je jednoduché zapsat funkci, která vrátí seznam čísel série Fibonacci
+namísto jeho vytištění:
+
+Tento příklad, jako obvykle, demonstruje některé nové funkce Pythonu:
+
+Výkaz návratů se vrátí hodnotou z funkce. návrat bez argumentu výrazu nevrací
+žádný. Klesající konec funkce také nevrací žádný.
+Výsledek result.append (a) volá metodu výsledku objektu seznamu. Metoda je
+funkce, která 'patří' objektu a je pojmenována jako obj.methodname, kde obj
+je nějaký objekt (může to být výraz) a methodname je název metody, která je
+definována typem objektu. Různé typy definují různé metody. Metody různých
+typů mohou mít stejný název, aniž by to způsobilo nejednoznačnost. (Je možné
+definovat vlastní typy objektů a metody pomocí tříd, viz Třídy) Metoda append()
+zobrazená v příkladu je definována pro objekty seznamu; na konci seznamu přidá
+nový prvek. V tomto příkladu odpovídá výsledek = výsledek + [a], ale je efektivnější.
