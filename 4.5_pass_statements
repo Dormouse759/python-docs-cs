@@ -1,0 +1,8 @@
+Příkaz pass nic nedělá. Může být použito, když je požadováno
+syntaktické prohlášení, ale program nevyžaduje žádné akce. Například:
+
+To se obvykle používá pro vytváření minimalistických tříd:
+
+Další způsob, jak lze použít příkaz pass, je jako držák místa pro funkci nebo
+tělo podmínky, když pracujete na novém kódu, což vám umožní přemýšlet
+na abstraktnější úrovni. Průchod je tiše ignorován:

@@ -1,0 +1,18 @@
+Příkaz break, stejně jako v C, vyskočí z nejvnitřnějšího uzavření for
+nebo while cyklech.
+
+Výkazy cyklů mohou mít else klauzuli; je spuštěna, když cyklus končí
+vyčerpáním seznamu (při for) nebo když se podmínka stává nepravdivou (při while),
+nikoliv však, když je smyčka ukončena příkazem break. To je doloženo
+následující smyčkou, která vyhledává prvočísla:
+
+(Ano, je to funkční kód. Podívejte se pozorně: klauzule else patří do cyklu
+for, nikoliv příkaz if.)
+
+Při použití s cyklem má klauzule else víc společné s klauzulou else
+příkazu try, než to platí pro příkazy if: klauzule else příkazu try běží,
+když nedojde k žádné výjimce, a klauzule smyčky else běží dokud nedojde
+k přerušení. Další informace o příkazu try a výjimkách naleznete v tématu
+Manipulace s výjimkami.
+
+Příkaz continue, také propůjčeno z C, pokračuje do další iterací smyčky:
