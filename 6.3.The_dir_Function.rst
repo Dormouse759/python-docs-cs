@@ -1,0 +1,14 @@
+Funkce :func:`dir`
+
+Zabudovaná funkce :dir:`dir` se používá pro zjištění jmen, které modul
+definuje. Vrací seřazený seznam řetězců::
+
+Nepředáme-li funkci :func:`dir` žádné argumenty, vrátí seznam aktuálně
+definovaných jmen::
+
+Poznamenejte, že tato funkce vrací všechna jména: proměnné, moduly, funkce atd.
+
+Funkce :func:`dir` nevrací jména zabudovaných funkcí a proměnných. Pokud chcete
+seznam těchto vlastností, jsou definovány ve standardním
+modulu :mod:`builtins`::
+
