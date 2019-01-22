@@ -1,14 +1,14 @@
 Standardní Moduly
 
-Python je poskytován s knihovnou standardních modulů, které jsou popsány
+Python je distribuován s knihovnou standardních modulů, které jsou popsány
 ve vlastním dokumentu s názvem *TODO* Python Library Reference (dále pouze
-Library Reference). Některé moduly jsou zabudovány do interpreteru, tyto
+Library Reference). Některé moduly jsou zabudovány do interpreteru, ty
 poskytují přístup k operacím, které nejsou součástí jádra jazyku, ale přesto
-jsou zabudovány ať už pro efektivitu či pro poskytnutí primitiv operačních
+jsou zabudovány ať už pro efektivitu či pro poskytnutí primitivních operačních
 systémů jako například systémová volání. Soubor takových modulů závisí na
 konfiguraci, které také závisí na podléhající vrstvě. Například modul
-:mod:`winreg` se nachází pouze na operačních systémech Windows. Nadále je zde
-modul, který si zaslouží pozornost: :mod:`sys`, který je zabudován do každého
+:mod:`winreg` se nachází pouze na operačních systémech Windows. Dále je zde
+modul, který si zaslouží pozornost: :mod:`sys`, ten je zabudován do každého
 Pythonního interpreteru. Proměnné ``sys.ps1`` a ``sys.ps2`` definují řetězce,
 které se používají jako označení primárního a sekundárního příkazu::
 
