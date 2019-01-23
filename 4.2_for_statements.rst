@@ -1,8 +1,8 @@
 Příkaz for se v Pythonu mírně liší od použití v C a Pascalu. Namísto toho, aby
 vždy přesahoval aritmetický průběh čísel (jako v Pascalu), nebo dává uživateli
-možnost definovat jak velikost kroku, tak podmínku zastavení (jako C),
-prokládá iteraci přes položky jakékoliv sekvence (seznam nebo řetězec) v
-pořadí, v jakém se objevují v pořadí. Například:
+možnost definovat jak velikost kroku, tak podmínku zastavení (jako C), prokládá
+iteraci přes položky jakékoliv sekvence (seznam nebo řetězec) v pořadí, v jakém
+se objevují v pořadí. Například:
 
 Pokud potřebujete změnit sekvenci, kterou opakujete, když jste uvnitř smyčky
 (například pro kopírování vybraných položek), doporučuje se nejprve vytvořit

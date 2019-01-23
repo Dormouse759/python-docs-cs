@@ -1,12 +1,23 @@
-Ve výchozím nastavení jsou zdrojové soubory Pythonu považovány za kódované v UTF-8. V tomto kódování se znaky většiny jazyků na světě mohou používat současně v řetězcích literály, identifikátory a komentáře - ačkoli standardní knihovna používá pouze znaky ASCII pro identifikátory, konvence, kterou by měl následovat jakýkoli přenosný kód. Abyste správně zobrazili všechny tyto znaky, musí váš editor rozpoznat, že soubor je UTF-8 a musí používat písmo, které podporuje všechny znaky v souboru.
+Ve výchozím nastavení jsou zdrojové soubory Pythonu považovány za kódované v
+UTF-8. V tomto kódování se znaky většiny jazyků na světě mohou používat současně
+v řetězcích literály, identifikátory a komentáře - ačkoli standardní knihovna
+používá pouze znaky ASCII pro identifikátory, konvence, kterou by měl následovat
+jakýkoli přenosný kód. Abyste správně zobrazili všechny tyto znaky, musí váš
+editor rozpoznat, že soubor je UTF-8 a musí používat písmo, které podporuje
+všechny znaky v souboru.
 
-Chcete-li deklarovat kódování jiné než výchozí, měl by být jako první řádek souboru přidán zvláštní řádek komentáře. Syntaxe je následující:
+Chcete-li deklarovat kódování jiné než výchozí, měl by být jako první řádek
+souboru přidán zvláštní řádek komentáře. Syntaxe je následující:
 
 kde encoding je jedním z platných kodeků podporovaných Pythonem.
 
-Chcete-li například prohlásit, že kódování systému Windows-1252 má být použito, první řádek souboru zdrojového kódu by měl být:
+Chcete-li například prohlásit, že kódování systému Windows-1252 má být použito,
+první řádek souboru zdrojového kódu by měl být:
 
-Jedinou výjimkou pravidla prvního řádku je, když zdrojový kód začíná řádkem UNIX "shebang". V tomto případě by mělo být jako druhý řádek souboru přidáno prohlášení o kódování. Například:
+Jedinou výjimkou pravidla prvního řádku je, když zdrojový kód začíná řádkem UNIX
+"shebang". V tomto případě by mělo být jako druhý řádek souboru přidáno
+prohlášení o kódování. Například:
 
-Poznámky pod čarou
-[1] V systému Unix je interpretr Python 3.x ve výchozím nastavení neinstalován s spustitelným jménem python, takže není v konfliktu se současně nainstalovaným spustitelným programem Python 2.x.
+Poznámky pod čarou [1] V systému Unix je interpretr Python 3.x ve výchozím
+nastavení neinstalován s spustitelným jménem python, takže není v konfliktu se
+současně nainstalovaným spustitelným programem Python 2.x.

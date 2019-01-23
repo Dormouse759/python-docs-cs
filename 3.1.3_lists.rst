@@ -1,12 +1,14 @@
-Python zná řadu sloučenin datových typů, které se používají ke sdružování dalších hodnot. Nejobvyklejší je seznam,
-který lze zapsat jako seznam hodnot (položek) oddělených čárkami mezi hranatými závorkami. Seznamy mohou obsahovat
-položky různých typů, ale obvykle všechny položky mají stejný typ.
-Stejně jako řetězce (a všechny ostatní vestavěné typy sekvencí) lze seznamy indexovat a nakrájet:
-Všechny operace seku vrátí nový seznam obsahující požadované prvky. To znamená, že následující příklad rozsekne seznam na
-novou (mělkou) kopii seznamu:
-Seznamy také podporují operace, jako je zřetězení:
-Na rozdíl od řetězců, které jsou neměnné, jsou seznamy měnitelným typem, tj. je možné změnit jejich obsah:
-Nové položky můžete také přidat na konci seznamu pomocí metody append() (o metodách se dozvíme později):
-Přiřazení k podseznamům je také možné, a to může dokonce změnit velikost seznamu nebo ji zcela vymazat:
-Vestavěná funkce len() platí také pro seznamy:
-Seznamy lze vnořovat (vytvářet seznamy obsahující jiné seznamy), například:
+Python zná řadu sloučenin datových typů, které se používají ke sdružování
+dalších hodnot. Nejobvyklejší je seznam, který lze zapsat jako seznam hodnot
+(položek) oddělených čárkami mezi hranatými závorkami. Seznamy mohou obsahovat
+položky různých typů, ale obvykle všechny položky mají stejný typ. Stejně jako
+řetězce (a všechny ostatní vestavěné typy sekvencí) lze seznamy indexovat a
+nakrájet: Všechny operace seku vrátí nový seznam obsahující požadované prvky. To
+znamená, že následující příklad rozsekne seznam na novou (mělkou) kopii seznamu:
+Seznamy také podporují operace, jako je zřetězení: Na rozdíl od řetězců, které
+jsou neměnné, jsou seznamy měnitelným typem, tj. je možné změnit jejich obsah:
+Nové položky můžete také přidat na konci seznamu pomocí metody append() (o
+metodách se dozvíme později): Přiřazení k podseznamům je také možné, a to může
+dokonce změnit velikost seznamu nebo ji zcela vymazat: Vestavěná funkce len()
+platí také pro seznamy: Seznamy lze vnořovat (vytvářet seznamy obsahující jiné
+seznamy), například:

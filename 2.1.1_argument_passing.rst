@@ -1,10 +1,10 @@
 Když je interpreter znám, jméno skriptu a další argumenty se poté změní na
 seznam řetězců a přiřadí se k proměnné argv v modulu sys. K tomuto seznamu
-můžete přistupovat příkazem 'import sys'. Délka seznamu je alespoň jedna;
-pokud žádný skript a žádné argumenty nejsou zadány, sys. argv [0] je prázdný
-string. Pokud je název skriptu uveden jako '-' (označení pro standardní vstup)
-, hodnota sys.argv [0] je nastavena na '-'. Při použití příkazu -c je hodnota
-sys.argv [0] nastavena na '-c'. Pokud je použit modul -m, sys. argv [0] je
-nastaven na celý název tohoto modulu. Možnosti po příkazu -c nebo modulu -m se
-nepředávají ke zpracování interpreterem Pythonu jako takovým, ale jsou
-ponechány v příkazu sys.argv pro příkaz nebo modul, který se má zpracovat.
+můžete přistupovat příkazem 'import sys'. Délka seznamu je alespoň jedna; pokud
+žádný skript a žádné argumenty nejsou zadány, sys. argv [0] je prázdný string.
+Pokud je název skriptu uveden jako '-' (označení pro standardní vstup), hodnota
+sys.argv [0] je nastavena na '-'. Při použití příkazu -c je hodnota sys.argv [0]
+nastavena na '-c'. Pokud je použit modul -m, sys. argv [0] je nastaven na celý
+název tohoto modulu. Možnosti po příkazu -c nebo modulu -m se nepředávají ke
+zpracování interpreterem Pythonu jako takovým, ale jsou ponechány v příkazu
+sys.argv pro příkaz nebo modul, který se má zpracovat.
