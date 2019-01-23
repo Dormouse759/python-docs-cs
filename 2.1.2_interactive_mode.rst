@@ -1,8 +1,7 @@
-Při čtení příkazů z tty je interpreterem řečeno, že je v interaktivním režimu.
-V tomto režimu interpreter vypíše primární prompt v podobě tří znaků větší než
+Při čtení příkazů z tty je interpreterem řečeno, že je v interaktivním režimu. V
+tomto režimu interpreter vypíše primární prompt v podobě tří znaků větší než
 (>>>); sekundární prompt má pak podobu tří teček (. . . ). Interpreter před
-zobrazením první výzvy vypíše uvítací zprávu obsahující číslo verze a
-copyright:
+zobrazením první výzvy vypíše uvítací zprávu obsahující číslo verze a copyright:
 
 Pokračující řádky jsou potřeba při zadávání víceřádkových konstrukcí.
 Prohlédněte si tento příklad s if:

@@ -7,11 +7,10 @@ Například ve verzi 3.3 by kompilovaná verze spam.py by se cache uložila jako
 `__pycache__/spam.cpython-33.pyc`. Tato konvence pojmenovávání umožňuje
 koexistenci modulů kompilovaných v různých verzích. 
 
-Python kontroluje datum poslední úpravy zdrojového kódu proti kompilované
-verzi, aby zjistil, jestli je aktuální a jestli potřebuje překompilovat.
-Toto je zcela automatický proces. Kompilované moduly jsou také zcela nezávislé
-na platformě, takže stejná knihovna může být sdílena mezi systémy o různých
-architekturách.
+Python kontroluje datum poslední úpravy zdrojového kódu proti kompilované verzi,
+aby zjistil, jestli je aktuální a jestli potřebuje překompilovat. Toto je zcela
+automatický proces. Kompilované moduly jsou také zcela nezávislé na platformě,
+takže stejná knihovna může být sdílena mezi systémy o různých architekturách.
 
 Python se nedívá po cache souboru pouze ve dvou případech. Zaprvé, vždy
 rekompiluje a nikdy neukládá vstup přímo z příkazového řádku. Pro umožnění
@@ -22,11 +21,10 @@ Pár tipů pro experty:
 
 * Python přikaz lze použít s přepínači :option:`-O` nebo :option:`-O0` pro
   snížení velikosti compilovaného modulu. Přepínač ``-O`` odstraňuje assert
-  příkazy, ``-O0`` zároveň odstraní i assert příkazy a __doc__ řetězce.
-  Vzhledem k tomu, že programy mohou záviset na jejich dostupnosti, měli
-  byste toto používat pouze pokud víte, co děláte. "Optimalizované" moduly
-  mají ``opt-`` označení a často jsou menší. Budoucí vydání mohou měnit
-  důsledky optimalizace.
+  příkazy, ``-O0`` zároveň odstraní i assert příkazy a __doc__ řetězce. Vzhledem
+  k tomu, že programy mohou záviset na jejich dostupnosti, měli byste toto
+  používat pouze pokud víte, co děláte. "Optimalizované" moduly mají ``opt-``
+  označení a často jsou menší. Budoucí vydání mohou měnit důsledky optimalizace.
 
 * Program neběží nikterak rychlejí, je-li čten z ``.pyc`` souboru oproti
   běžnému ``.py`` souboru. Jediná věc rychlejší na ``.pyc`` souborech je

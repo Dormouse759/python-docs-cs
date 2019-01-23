@@ -1,19 +1,47 @@
-Samozřejmě, že můžeme použít Python pro složitější úkoly než přidání dvou a dvou dohromady. Například můžeme napsat počáteční dílčí sekvenci Fibonačiho řady následujícím způsobem:
+Samozřejmě, že můžeme použít Python pro složitější úkoly než přidání dvou a dvou
+dohromady. Například můžeme napsat počáteční dílčí sekvenci Fibonačiho řady
+následujícím způsobem:
 
 Tento příklad představuje několik nových funkcí.
 
-První řádek obsahuje vícenásobné přiřazení: proměnné a a b současně získají nové hodnoty 0 a 1. Na posledním řádku se opět používá, což ukazuje, že výrazy na pravé straně jsou vyhodnoceny nejdříve před jakýmkoli přiřazením probíhat. Výrazy na pravé straně jsou vyhodnocovány zleva doprava.
+První řádek obsahuje vícenásobné přiřazení: proměnné a a b současně získají nové
+hodnoty 0 a 1. Na posledním řádku se opět používá, což ukazuje, že výrazy na
+pravé straně jsou vyhodnoceny nejdříve před jakýmkoli přiřazením probíhat.
+Výrazy na pravé straně jsou vyhodnocovány zleva doprava.
 
-Cyklus While se provádí tak dlouho, dokud podmínka (zde: a <10) zůstane pravdivá. V Pythonu, stejně jako v C, platí jakákoli nenulová celočíselná hodnota; nula je nepravda. Podmínkou může být také řetězec nebo hodnota seznamu, ve skutečnosti jakákoli sekvence; cokoli s nenulovou délkou je pravda, prázdné sekvence jsou nepravda. Test použitý v příkladu je jednoduché srovnání. Standardní porovnávací operátoři jsou napsáni stejným způsobem jako u C: <(méně než),> (větší než), == (rovno), <= (méně než nebo rovno),> = (větší nebo rovno) a!= (nerovná se).
+Cyklus While se provádí tak dlouho, dokud podmínka (zde: a <10) zůstane
+pravdivá. V Pythonu, stejně jako v C, platí jakákoli nenulová celočíselná
+hodnota; nula je nepravda. Podmínkou může být také řetězec nebo hodnota seznamu,
+ve skutečnosti jakákoli sekvence; cokoli s nenulovou délkou je pravda, prázdné
+sekvence jsou nepravda. Test použitý v příkladu je jednoduché srovnání.
+Standardní porovnávací operátoři jsou napsáni stejným způsobem jako u C: <(méně
+než),> (větší než), == (rovno), <= (méně než nebo rovno),> = (větší nebo rovno)
+a!= (nerovná se).
 
-Tělo cyklu je odsazeno: odsazení je Pythonovský způsob seskupování výkazů. Na interaktivní výzvě musíte zadat tabulátor nebo mezery pro každou odsazený řádek. V praxi připravíte složitější vstup pro Python s textovým editorem; všechny slušné textové editory mají automatické zarovnání. Při zadání interaktivního příkazu musí být za ním vyplněn prázdný řádek (protože syntaktický analyzátor nemůže odhadnout, když jste zadali poslední řádek). Všimněte si, že každý řádek v základním bloku musí být odsazen stejně.
+Tělo cyklu je odsazeno: odsazení je Pythonovský způsob seskupování výkazů. Na
+interaktivní výzvě musíte zadat tabulátor nebo mezery pro každou odsazený řádek.
+V praxi připravíte složitější vstup pro Python s textovým editorem; všechny
+slušné textové editory mají automatické zarovnání. Při zadání interaktivního
+příkazu musí být za ním vyplněn prázdný řádek (protože syntaktický analyzátor
+nemůže odhadnout, když jste zadali poslední řádek). Všimněte si, že každý řádek
+v základním bloku musí být odsazen stejně.
 
-Funkce print() zapíše hodnotu argumentu (argumentů), který je zadán. Odlišuje se od psaní výrazu, který chcete psát (jak jsme dělali dříve v příkladech kalkulačky), ve způsobu, jakým zpracovává více argumentů, množství desetiných míst a řetězce. Řetězce jsou vypsáný bez uvozovek a do položek se vkládá mezerník, takže můžete vše dobře formátovat, například takto:
+Funkce print() zapíše hodnotu argumentu (argumentů), který je zadán. Odlišuje se
+od psaní výrazu, který chcete psát (jak jsme dělali dříve v příkladech
+kalkulačky), ve způsobu, jakým zpracovává více argumentů, množství desetiných
+míst a řetězce. Řetězce jsou vypsáný bez uvozovek a do položek se vkládá
+mezerník, takže můžete vše dobře formátovat, například takto:
 
-Klíčové slovo end lze použít k vyloučení nového řádku po výstupu nebo ukončení výstupu jiným řetězcem:
+Klíčové slovo end lze použít k vyloučení nového řádku po výstupu nebo ukončení
+výstupu jiným řetězcem:
 
 Poznámky pod čarou
 
-Protože ** má vyšší prioritu než -, -3 ** 2 bude interpretováno jako - (3 ** 2) a výsledkem bude -9. Chcete-li tomu zabránit a získat 9, můžete použít (-3) ** 2.
+Protože ** má vyšší prioritu než -, -3 ** 2 bude interpretováno jako - (3 ** 2)
+a výsledkem bude -9. Chcete-li tomu zabránit a získat 9, můžete použít (-3) **
+2.
 
-Na rozdíl od jiných jazyků mají speciální znaky, jako například \n má stejný význam jak s ('...'), tak s dvojitým ("..."). Jediným rozdílem mezi těmito dvěma je, že v rámci jednotlivých citací nemusíte uniknout " (ale musíte uniknout \) a naopak.
+Na rozdíl od jiných jazyků mají speciální znaky, jako například \n má stejný
+význam jak s ('...'), tak s dvojitým ("..."). Jediným rozdílem mezi těmito dvěma
+je, že v rámci jednotlivých citací nemusíte uniknout " (ale musíte uniknout \) a
+naopak.

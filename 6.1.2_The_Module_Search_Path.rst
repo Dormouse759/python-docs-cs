@@ -1,11 +1,9 @@
-Vyhledávací cesty modulů.
--------------------------
+Vyhledávací cesty modulů. -------------------------
 
-Když je importován modul se jménem :mod:`spam`, interpreter nejdříve
-hledá zabudované moduly s daným názvem. Není-li žádný nalezen, hledá
-se soubor :file:`spam.py` v seznamu adresářů, který se nachází v
-proměnné :data:`sys.path`. :data:`sys.path` se inicializuje z těchto
-lokací:
+Když je importován modul se jménem :mod:`spam`, interpreter nejdříve hledá
+zabudované moduly s daným názvem. Není-li žádný nalezen, hledá se soubor
+:file:`spam.py` v seznamu adresářů, který se nachází v proměnné
+:data:`sys.path`. :data:`sys.path` se inicializuje z těchto lokací:
 
 * Adresář obsahující vstupní skript (nebo aktuální adresář, není-li
   vstupní soubor zadán).
@@ -18,8 +16,8 @@ vstupní skript generují až po průchodu přes symlink. Jinými slovy, adresá
 obsahující daný symlink se **nepřidává** do výhledávacích cest.
 
 Po dokončení inicializace Pythonní programy mohou modifikovat :data:`sys.path`.
-Adresář obsahující skript, který běží, je položen na začátek vyhledávacích
-cest a to ještě před cestu ke knihovně. To znamená, že skripty v daném adresáři
-se načtou namísto modulů z knihovny se stejným jménem. Toto je chyba, není-li
+Adresář obsahující skript, který běží, je položen na začátek vyhledávacích cest
+a to ještě před cestu ke knihovně. To znamená, že skripty v daném adresáři se
+načtou namísto modulů z knihovny se stejným jménem. Toto je chyba, není-li
 nahrazení zamýšleno. Viz sekci :ref:`tut-standardmodules` pro více informací.
 
