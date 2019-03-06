@@ -1,0 +1,55 @@
+Balíčky
+
+Balíčky jsou způsob strukturování jmených prostorů Pythonních modulů za použití
+"tečkové syntaxe". Například modul s názvem ``B`` v balíčku ``A`` se zapíše
+jako :mod:`A.B` Stejně jako použití modulů šetří autorům různých modulů
+starosti o názvy globálních proměnných jiných modulů, použití tečkové syntaxe
+šetří autorům vícemodulových balíčků jako NumPy nebo Pillow starosti o názvech
+jiných modulů.
+
+Dejme tomu, že chcete nadesignovat kolekci modulů ("balíček") pro jednotnou
+práci se zvukovými soubory a daty. Existuje mnoho zvukových formátů (obvykle
+rozlišené dle přípony, například: :file:`.wav`, :file:`.aiff`, :file:`.au`).
+V takovém případě je vhodnější udržovat rostoucí kolekci modulů pro konverzi
+mezi jednotlivými formáty. Také existuje spousta různých operací, které byste
+mohli chtít provádět na zvukových datech (mixování, ozvěna, ekvalizér, umělý
+stereo efekt), takže ve výsledku budete psát nikdy nekončící soubor modulů
+pro tyto operace. Zde je možná struktura vašeho balíčku (vyjádřena v poobě
+hierarchického souborového systému):
+
+Při importu balíčku se Python dívá do adresářů v ``sys.path`` a hledá
+balíčkový podadresář.
+
+Soubory :file:`__init__.py` jsou potřeba, aby Python rozpoznal adresář jako
+balíček. Toto je prováděno z důvodu toho, aby se adresáře s běžnými názvy jako
+například ``string`` nedopatřením neobjevovaly v modulových vyhledávacích
+cestách. V tom nejjednodušším případě :file:`__init__.py` může být pouze
+prázdný soubor, ale může také pouštět inicializační kód nebo nastavovat
+proměnnou ``__all__``, která je vysvětlena později.
+
+Uživatelé balíčků mohou importovat jednotlivé moduly z balíčku, například::
+
+Toto načte podmodul :mod:`sound.effects.echo`.
+Musí být zapsán plným názvem::
+
+Alternativa k importování podmodulů::
+
+Toto také načte modul :mod:`echo` a zpřístupní jej bez jeho předpony.
+Následovně může být použit takto::
+
+Další variace je import dané funkce či proměnné přímo::
+
+Toto opět načte podmodul :mod:`echo`, ale funkci :func:`echofilter` zpřístupní
+přímo::
+
+Všimněte si, že při použití ``from balíček import předmět`` předmětem může být
+buď podmodul (nebo podbalíček) balíčku nebo jiný název definováno v balíčku,
+jako například funkce, třída, nebo proměnná. Výraz ``import`` nejdříve zkouší,
+jestli předmět byl definován v balíčku, pokud ne, předpokládá, že jde o modul
+a zkusí jej načíst. Pokud selže, vyhodí výjimku :exc:`ImportError`
+
+Naopak za použití syntaxe ``import předmět.podpředmět.podpředmět`` každý
+předmět kromě posledního musí být balíček, poslední předmět může být modul
+nebo balíček, ale nemůže být třída, funkce ani proměnná definována v předchozím
+předmětu.
+
