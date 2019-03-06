@@ -4,7 +4,7 @@ Balíčky jsou způsob strukturování jmených prostorů Pythonních modulů za
 "tečkové syntaxe". Například modul s názvem ``B`` v balíčku ``A`` se zapíše
 jako :mod:`A.B` Stejně jako použití modulů šetří autorům různých modulů
 starosti o názvy globálních proměnných jiných modulů, použití tečkové syntaxe
-šetří autorům vícemodulových balíčků jako NumPy nebo Pillow starosti o jménech
+šetří autorům vícemodulových balíčků jako NumPy nebo Pillow starosti o názvech
 jiných modulů.
 
 Dejme tomu, že chcete nadesignovat kolekci modulů ("balíček") pro jednotnou
@@ -21,7 +21,7 @@ Při importu balíčku se Python dívá do adresářů v ``sys.path`` a hledá
 balíčkový podadresář.
 
 Soubory :file:`__init__.py` jsou potřeba, aby Python rozpoznal adresář jako
-balíček. Toto je prováděno z důvodu toho, aby se adresáře s běžnými jmény jako
+balíček. Toto je prováděno z důvodu toho, aby se adresáře s běžnými názvy jako
 například ``string`` nedopatřením neobjevovaly v modulových vyhledávacích
 cestách. V tom nejjednodušším případě :file:`__init__.py` může být pouze
 prázdný soubor, ale může také pouštět inicializační kód nebo nastavovat
@@ -43,7 +43,7 @@ Toto opět načte podmodul :mod:`echo`, ale funkci :func:`echofilter` zpřístup
 přímo::
 
 Všimněte si, že při použití ``from balíček import předmět`` předmětem může být
-buď podmodul (nebo podbalíček) balíčku nebo jiné jméno definováno v balíčku,
+buď podmodul (nebo podbalíček) balíčku nebo jiný název definováno v balíčku,
 jako například funkce, třída, nebo proměnná. Výraz ``import`` nejdříve zkouší,
 jestli předmět byl definován v balíčku, pokud ne, předpokládá, že jde o modul
 a zkusí jej načíst. Pokud selže, vyhodí výjimku :exc:`ImportError`
